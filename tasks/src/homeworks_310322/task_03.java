@@ -2,7 +2,7 @@ package homeworks_310322;
 
 import java.util.Scanner;
 
-public class task_3 {
+public class task_03 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter your first float number:");

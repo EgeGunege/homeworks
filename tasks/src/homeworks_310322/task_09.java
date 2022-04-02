@@ -2,7 +2,7 @@ package homeworks_310322;
 
 import java.util.Scanner;
 
-public class task_9 {
+public class task_09 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Please enter 3 number in the row.");

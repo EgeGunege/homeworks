@@ -2,7 +2,7 @@ package homeworks_310322;
 
 import java.util.Scanner;
 
-public class task_5 {
+public class task_05 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter your number:");

@@ -1,6 +1,6 @@
 package homeworks_310322;
 
-public class task_6 {
+public class task_06 {
     public static void main(String[] args) {
         int n1=20;
         int n2=10;

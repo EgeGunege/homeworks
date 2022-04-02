@@ -1,6 +1,6 @@
 package homeworks_310322;
 
-public class task_4 {
+public class task_04 {
     public static void main(String[] args) {
         char c1='a';
         int ascii=c1;
