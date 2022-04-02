@@ -5,30 +5,40 @@ import java.util.Scanner;
 public class task_24 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        int n1=1;
-        int n2=0;
         System.out.println("Please enter your number:");
-        int n3= input.nextInt();
-        int n4=1;
-        int n5=n3;
-        int n6=n3;
-        for( ;n3!=0;n3/=10){
-            n1=n3%10;
-        }
-        while(n3>0){
-            n1=n3%10;
-            n4*=n1;
-            n2+=n4;
-            n3=n3/10;
+        int myNumber= input.nextInt();
+        int n2=myNumber;
+        int n3=myNumber;
+        int digit=0; // 4
+        while (myNumber!=0){
+            digit++;
+            myNumber/=10;
         }
 
-        System.out.println("n4 = " + n4);
-        System.out.println("n5 = " + n5);
-        System.out.println("n2 = " + n2);
-        if(n5==n2){
-            System.out.println("It's Armstrong Number");
+
+        int result=0;
+
+
+        while (n2 !=0) {
+            int temp1=1;
+
+            int lastDigit = n2 % 10;
+
+            for (int i = 1; i <= digit; i++) {
+                temp1 *=  lastDigit;
+
+
+
+            }
+            result+=temp1;
+
+            n2 /=10;
+        }
+
+        if(result==n3){
+            System.out.println("Number is Armstrong number");
         }else{
-            System.out.println("It's not Armstrong Number");
+            System.out.println("Number is not Armstrong number");
         }
     }
 }
