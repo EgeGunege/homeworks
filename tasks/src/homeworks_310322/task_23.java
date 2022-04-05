@@ -9,19 +9,17 @@ public class task_23 {
         int n1= input.nextInt();
         System.out.println("Please enter your second number:");
         int n2= input.nextInt();
-        String primeNumbers="";
         while (n1 < n2) {
-            boolean flag = false;
+            boolean b1= false;
 
             for(int i = 2; i <= n1/2; ++i) {
-                // condition for nonprime number
                 if(n1 % i == 0) {
-                    flag = true;
+                    b1= true;
                     break;
                 }
             }
 
-            if (!flag && n1 != 0 && n1 != 1)
+            if (!b1 && n1 != 0 && n1 != 1)
                 System.out.print(n1 + " ");
 
             ++n1;
