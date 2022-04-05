@@ -10,23 +10,21 @@ public class task_23 {
         System.out.println("Please enter your second number:");
         int n2= input.nextInt();
         String primeNumbers="";
-        for (int i = 1; i <= n2; i++)
-        {
-            int counter=0;
-            for(int l=n1; l<=n2; n2--)
-            {
-                if(l%n2==0)
-                {
-                    counter = counter + 1;
+        while (n1 < n2) {
+            boolean flag = false;
+
+            for(int i = 2; i <= n1/2; ++i) {
+                // condition for nonprime number
+                if(n1 % i == 0) {
+                    flag = true;
+                    break;
                 }
             }
-            if (counter ==2)
-            {
-                //Appended the Prime number to the String
-                primeNumbers = primeNumbers + i + " ";
-            }
+
+            if (!flag && n1 != 0 && n1 != 1)
+                System.out.print(n1 + " ");
+
+            ++n1;
         }
-        System.out.println("Prime numbers from 1 to n are :");
-        System.out.println(primeNumbers);
     }
 }
